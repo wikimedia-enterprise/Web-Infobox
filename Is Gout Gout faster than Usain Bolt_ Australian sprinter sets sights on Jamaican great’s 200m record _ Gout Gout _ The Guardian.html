@@ -750,7 +750,7 @@
             tooltip.classList.add('visible');
 
             try {
-                const response = await fetch(`http://localhost:8080/api/infobox?topic=${encodeURIComponent(topic)}`);
+                const response = await fetch(`https://infobox-project.onrender.com/api/infobox?topic=${encodeURIComponent(topic)}`);
                 if (!response.ok) throw new Error('Not found');
                 const data = await response.json();
 
